@@ -1,10 +1,11 @@
 package com.in28minutes.learnspringframework.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
-//    MarioGame game;
-//    public GameRunner(MarioGame marioGame) {
-//        this.game = marioGame;
-//    }
     private GamingConsole game;
     public GameRunner(GamingConsole game) {
         this.game = game;
