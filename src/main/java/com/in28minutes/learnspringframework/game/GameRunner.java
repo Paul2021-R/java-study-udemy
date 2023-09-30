@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class GameRunner {
     private GamingConsole game;
-    public GameRunner(GamingConsole game) {
+    public GameRunner(@Qualifier("superContraGameQualifier") GamingConsole game) {
         this.game = game;
     }
     public void run() {
